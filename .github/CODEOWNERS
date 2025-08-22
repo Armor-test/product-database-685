@@ -1,0 +1,38 @@
+# CODEOWNERS file for product-database-685
+# Global owners - will be requested for all PRs
+* @Armor-test/team-reporting @Armor-test/dept-automation @Armor-test/team-notifications
+
+# Directory ownership
+/examples/ @Armor-test/team-core @Armor-test/unit-design
+/public/ @Armor-test/dept-automation @Armor-test/dept-reporting
+/shared/ @Armor-test/grp-payments @Armor-test/grp-reporting @Armor-test/grp-search
+/middleware/ @Armor-test/team-governance @Armor-test/squad-ml @Armor-test/dept-notifications
+/services/ @Armor-test/team-security @Armor-test/squad-ux
+/db/ @Armor-test/dept-api @Armor-test/unit-devops @Armor-test/dept-security
+/styles/ @Armor-test/dept-security @Armor-test/squad-api
+/spec/ @Armor-test/team-frontend @Armor-test/dept-api @Armor-test/grp-integration
+/build/ @Armor-test/squad-cloud @Armor-test/dept-logging
+/dist/ @Armor-test/grp-api @Armor-test/squad-research @Armor-test/squad-api
+/third_party/ @Armor-test/unit-governance @Armor-test/grp-integration
+
+# File type ownership
+*.ini @Armor-test/dept-automation @Armor-test/team-notifications
+*.sql @Armor-test/grp-ui @Armor-test/team-reporting @Armor-test/unit-design
+*.toml @Armor-test/dept-automation @Armor-test/dept-data
+*.tsx @Armor-test/squad-cache @Armor-test/unit-test @Armor-test/squad-product
+*.json @Armor-test/team-frontend @Armor-test/dept-security
+*.ts @Armor-test/dept-release @Armor-test/team-frontend
+*.go @Armor-test/dept-reporting @Armor-test/dept-release @Armor-test/dept-notifications
+*.properties @Armor-test/dept-test @Armor-test/squad-frontend
+*.yaml @Armor-test/team-logging @Armor-test/squad-performance
+*.proto @Armor-test/squad-api @Armor-test/team-frontend
+*.sh @Armor-test/dept-security @Armor-test/dept-billing
+*.kt @Armor-test/squad-cloud @Armor-test/dept-security @Armor-test/squad-ux
+*.config @Armor-test/team-logging @Armor-test/squad-reporting
+
+# Security and special files
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Dockerfile @Armor-test/devops @Armor-test/infra
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+package.json @Armor-test/dependency-team @Armor-test/security
+/src/**/security/ @Armor-test/security @Armor-test/compliance
